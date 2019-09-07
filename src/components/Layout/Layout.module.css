@@ -1,0 +1,17 @@
+.Layout {
+  display: flex;
+  flex-direction: row;
+  max-width: 1140px;
+  width: 100%;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.spaceBetween {
+  justify-content: space-between;
+  align-items: center;
+}
+
+.right {
+  justify-content: flex-end;
+}

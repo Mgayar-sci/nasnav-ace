@@ -1,8 +1,33 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700,800&display=swap');
+
+@font-face {
+  font-family: 'OpenSans';
+  src: url('./assets/fonts/OpenSans-Regular.ttf')  format('truetype');
+}
+
+:root {
+  --bg-color-1: #EEEEEE;
+  --bg-color-2: #FFFFFF;
+  --bg-color-3: #D7002A;
+  --bg-color-4: #f14946;
+  --bg-color-5: #F7F7F7;
+  --bg-color-6: #c3001e;
+  --bg-color-7: #424242;
+  --bg-color-8: #e32436;
+  --text-color-1: #393939;
+  --text-color-2: #757575;
+  --text-color-3: #333333;
+  --text-color-4: #FFFFFF;
+  --text-color-5: #f14946;
+  --text-color-6: #d40029;
+  --text-color-7: #c3001e;
+  --border-color-1: #CCCCCC;
+  --border-color-2: #646464;
+  --border-color-3: #c3c3c3;
+}
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
+  font-family: "Open Sans", "OpenSans", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

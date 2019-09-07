@@ -1,0 +1,16 @@
+
+.BranchDataH1 {
+  font-size: 20pt;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 75px auto 0 auto;
+
+}
+
+.BranchDataH3 {
+  font-size: 16pt;
+  font-weight: 600;
+  text-transform: capitalize;
+    margin: 5px auto 0 auto;
+
+}

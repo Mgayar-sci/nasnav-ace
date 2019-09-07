@@ -1,0 +1,22 @@
+.Slide {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  color: var(--text-color-4);
+  height: 100%;
+}
+
+.Slide h1 {
+  font-size: 77pt;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin: 35px 0 0;
+  text-shadow: 2px 4px 0 var(--text-color-5);
+}
+
+.Slide h3 {
+  font-size: 30.5pt;
+  font-weight: bolder;
+  text-transform: lowercase;
+  margin: 0;
+}

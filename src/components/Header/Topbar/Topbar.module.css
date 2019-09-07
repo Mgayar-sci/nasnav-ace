@@ -1,0 +1,6 @@
+.Topbar {
+  background-color: rgba(255, 0, 0, 0.5);
+  background-color: var(--bg-color-1);
+  color: var(--text-color-1);
+  font-size: 7pt;
+}

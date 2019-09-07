@@ -1,0 +1,28 @@
+.ProductsList{
+  width: 100%;
+}
+.ProductsList header{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 40px 0;
+}
+
+.ProductsList header h1{
+  text-transform: uppercase;
+  font-size: 17pt;
+  font-weight: 600;
+}
+
+.ProductsList header a {
+  color: inherit;
+  font-size: 10pt;
+  font-weight: 600;
+}
+
+.ProductsList .productsBox {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}

@@ -1,0 +1,31 @@
+.FooterLargeCol {
+  padding: 32px 0 42px;
+  align-self: flex-end;
+}
+
+.FooterLargeCol h5 {
+  font-size: 11pt;
+  margin-bottom: 20px;
+  font-weight: 600;
+  text-align: left;
+}
+
+.FooterLargeCol nav {
+  text-align: left;
+}
+
+.FooterLargeCol nav a {
+  display: block;
+  color: inherit;
+  font-size: 10pt;
+  margin-bottom: 20px;
+}
+
+.FooterLargeCol nav a:last-child {
+  margin-bottom: 0;
+}
+
+.FooterLargeCol nav a img{
+  width: 16px;
+  margin-right: 8px;
+}

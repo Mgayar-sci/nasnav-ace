@@ -1,0 +1,13 @@
+.Slogin {
+  font-size: inherit;
+  color: inherit !important;
+}
+
+.Slogin span {
+  font-weight: bold;
+}
+
+.Slogin a {
+  color: inherit;
+  text-decoration: underline;
+}

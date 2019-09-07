@@ -1,0 +1,25 @@
+.Searchbar{
+  display: flex;
+  flex-grow: 1;
+  margin: 24px 34px 0 44px;
+  border: 1px solid var(--border-color-1);
+}
+
+.Searchbar input {
+  width: 100%;
+  background-color: white;
+  background-color: transparent;
+  border: 0;
+  font-size: 9.5pt;
+  padding: 10px 15px;
+  color: var(--text-color-2)
+}
+
+.Searchbar button{
+  background-color: white;
+  border: 0;
+}
+
+.Searchbar button img {
+  height: 19px;
+}

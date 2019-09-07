@@ -1,0 +1,17 @@
+.SocialMedia{
+  margin-right: 30px;
+}
+
+.SocialMedia nav a {
+  display: inline-block;
+  padding-right: 10px;
+  margin: 0;
+}
+
+.SocialMedia nav a:last-child{
+  padding-right: 0;
+}
+
+.SocialMedia nav a img{
+  width: 34px;
+}

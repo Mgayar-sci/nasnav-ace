@@ -1,0 +1,14 @@
+.ProductAd {
+  margin: 40px 0;
+  width: 100%;
+}
+
+.ProductAd .ad {
+  background-image: url('../../assets/img/ego.jpg');
+  height: 290px;
+  background-repeat:no-repeat;
+  background-position: center top;
+  background-size:1470px 290px;
+
+
+}

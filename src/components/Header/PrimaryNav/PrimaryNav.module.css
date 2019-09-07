@@ -1,0 +1,10 @@
+.PrimaryNav {
+
+}
+
+.PrimaryNav a {
+  color: inherit;
+  font-size: 9.5pt;
+  font-weight: bold;
+  margin-right: 40px;
+}

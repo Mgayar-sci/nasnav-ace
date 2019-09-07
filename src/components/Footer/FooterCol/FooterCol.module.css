@@ -1,0 +1,21 @@
+.FooterCol {
+  padding: 22px 0 32px;
+  align-self: flex-start;
+}
+
+.FooterCol h5 {
+  font-size: 10pt;
+  margin-bottom: 20px;
+  font-weight: 600;
+  text-align: left;
+}
+
+.FooterCol nav {
+  text-align: left;
+}
+
+.FooterCol nav a {
+  display: block;
+  color: inherit;
+  font-size: 9pt;
+}

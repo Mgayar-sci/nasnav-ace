@@ -1,0 +1,14 @@
+.Footer {
+  background-color: var(--bg-color-7);
+  color: var(--text-color-4);
+}
+.Footer .bar{
+  border-bottom: 1px solid var(--border-color-2);
+}
+
+
+.Footer .bar .logoImg {
+  width:124px;
+  margin: 0 45px 0 60px;
+  align-self: flex-start;
+}

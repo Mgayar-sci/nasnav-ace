@@ -108,13 +108,14 @@ const getAceData = function () {
             links: [
               {
                 label: "19309",
-                icon: "/img/phone.png"
+                url: "/img/phone.png"
               },
               {
                 label: "customerservice@acehardware.com.eg",
-                icon: "/img/email.png"
+                url: "/img/email.png"
               }
-            ]
+            ],
+            minWidth: "290px"
           },
           {
             header: "Be the first to know and save",

@@ -1,5 +1,4 @@
 import React from 'react';
-
 import './App.css';
 
 import Layout from './components/Layout/Layout';
@@ -12,7 +11,7 @@ import SecondaryNav from './components/Header/SecondaryNav/SecondaryNav';
 
 import Logo from './components/Header/Logo/Logo';
 import Searchbar from './components/Header/Searchbar/Searchbar';
-import Button from './components/Button/Button';
+import Button from './components/Header/Button/Button';
 import cart from './assets/img/cart.png';
 
 import Headerbar from './components/Header/Headerbar/Headerbar';
@@ -35,6 +34,8 @@ import WeDeliver from './components/WeDeliver/WeDeliver';
 import ProductAd from './components/ProductAd/ProductAd';
 
 import { getAceData } from './services/ace-service';
+import Sidebar from './components/Sidebar/Sidebar';
+import MenuIcon from './components/Header/MenuIcon/MenuIcon';
 
 
 class App extends React.Component {
@@ -44,14 +45,18 @@ class App extends React.Component {
     secondaryNav: [],
     slideShowNav: [],
     productsData: [],
-    footerData: {}
+    footerData: {},
+    sidebar: {
+      show: true,
+      open: false
+    }
   }
 
   componentDidMount() {
     console.log("componentDidMount");
     
     getAceData()
-      .then( data => this.setState(data) )
+      .then( data => this.setState({...this.state, ...data}) )
       .catch( error => console.log(error) )
   }
 
@@ -59,45 +64,49 @@ class App extends React.Component {
   render() {
     return (
       <div className="App">
+        <Sidebar show={this.state.sidebar.show} open={this.state.sidebar.open} clickHandler={this.sidebarCloseHandler}>
+          <PrimaryNav links={this.state.primaryNav} vertical={true} />
+        </Sidebar>
         <Header>
           <Topbar>
-            <Layout height="27px" padding={"1px 5px"} spaceBetween={true}>
+            <Layout padding={"7px 5px"} spaceBetween={true}>
               <Slogin />
               <SecondaryNav links={this.state.secondaryNav} />
             </Layout>
           </Topbar>
           <Headerbar>
-            <Layout height="83px" padding={"1px 5px"} spaceBetween={true}>
+            <Layout padding={"7px 5px"} spaceBetween={true}>
               <Logo />
               <Searchbar />
               <Button label="Shopping Cart" image={cart} height="20px" />
             </Layout>
           </Headerbar>
           <Headerbar>
-            <Layout height="44px" padding={"1px 5px"} spaceBetween={true}>
+            <Layout padding={"10px 5px"} spaceBetween={true}>
+              <MenuIcon clickHandler={this.menuClickHandler} />
               <PrimaryNav links={this.state.primaryNav} />
             </Layout>
           </Headerbar>
         </Header>
         <Home>
           <Slideshow links={this.state.slideShowNav} />
-          <Layout height="285px" spaceBetween={true}>
+          <Layout spaceBetween={true}>
             <BackgroundBox bgImage={background360} imageWidth="1140px" imageHeight="259px" imageMargin="26px 0 0">
               <Degree360Data image={logo360} imageHeight="78px" title="360 Degree Shopping Experience" subtitle="Live ACE New Experience" />
             </BackgroundBox>
           </Layout>
-          <Layout height="228px" spaceBetween={true}>
-            <BackgroundBox bgImage={branch1} imageWidth="557px" imageHeight="193px" imageMargin="35px 0 0">
+          <Layout spaceBetween={true}>
+            <BackgroundBox bgImage={branch1} imageWidth="557px" imageHeight="193px" imageMargin="35px 20px 0 0">
               <BranchData title="Sheraton Store" subtitle="Explore" />
             </BackgroundBox>
             <BackgroundBox bgImage={branch2} imageWidth="557px" imageHeight="193px" imageMargin="35px 0 0">
               <BranchData title="Shorouk Store" subtitle="Explore" />
             </BackgroundBox>
           </Layout>
-          <Layout height="686px">
+          <Layout>
             <ProductsList productsData={this.state.productsData} />
           </Layout>
-          <Layout height="265px">
+          <Layout>
             <WeDeliver />
           </Layout>
           <ProductAd />
@@ -105,6 +114,16 @@ class App extends React.Component {
         <Footer footerData={this.state.footerData} />
       </div>
     );
+  }
+
+  menuClickHandler = () => {
+    console.log('menuClickHandler');
+    
+    this.setState({ sidebar: { ...this.state.sidebar, open: true } });
+  }
+
+  sidebarCloseHandler = () => {
+    this.setState({ sidebar: { ...this.state.sidebar, open: false } });
   }
 }
 

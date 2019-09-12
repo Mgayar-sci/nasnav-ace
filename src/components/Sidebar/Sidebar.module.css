@@ -1,0 +1,33 @@
+.Sidebar{
+  position: fixed;
+  background-color: var(--bg-color-1);
+  width: 70vw;
+  height: 100vh;
+  z-index: 110;
+  left: -100vw;
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
+}
+
+.Sidebar header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px;
+  border-bottom: 1px solid var(--border-color-2);
+}
+
+.Sidebar header button {
+  background: transparent;
+  border: 0;
+}
+
+.hide {
+  display: none;
+}
+
+.open {
+  left: 0;
+}
+

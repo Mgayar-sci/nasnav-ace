@@ -10,3 +10,14 @@
 .Button img {
   margin-left: 10px;
 }
+@media screen and (max-width: 1150px) {
+  .Button {
+    margin-right: 10px;
+  }
+}
+@media screen and (max-width: 690px) {
+  .Button {
+    order: 1;
+    align-self: flex-end;
+  }
+}

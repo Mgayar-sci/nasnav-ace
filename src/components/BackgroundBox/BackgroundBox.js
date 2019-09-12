@@ -1,15 +1,12 @@
 import React from 'react';
-
+import * as styles from './BackgroundBox.module.css';
 
 export default props => (
   <div style={{
-    width: props.imageWidth,
+    maxWidth: props.imageWidth,
     height: props.imageHeight,
     margin: props.imageMargin,
-    color: "var(--text-color-4)",
     backgroundImage: `url(${props.bgImage})`,
-    backgroundRepeat: "no-repeat",
-    backgroundPosition: "center top",
     backgroundSize: props.imageWidth + " " + props.imageHeight
-  }}>{props.children}</div>
+  }} className={styles.BackgroundBox}>{props.children}</div>
 )

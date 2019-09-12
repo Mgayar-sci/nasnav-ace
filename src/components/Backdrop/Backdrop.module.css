@@ -1,0 +1,18 @@
+.Backdrop {
+  position: fixed;
+  background-color: transparent;
+  width: 100vw;
+  height: 100vh;
+  z-index: 100;
+  left: -100vw;
+}
+
+.hide {
+  display: none;
+}
+
+.open {
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+

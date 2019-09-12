@@ -12,3 +12,27 @@
   margin: 0 45px 0 60px;
   align-self: flex-start;
 }
+
+@media screen and (max-width: 950px) {
+  .Footer .bar .logoImg {
+      margin: 0 0 0 10px;
+
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .Footer .bar .logoImg {
+    align-self: center;
+    justify-items: center;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 470px) {
+  .Footer .bar .logoImg {
+    align-self: flex-end;
+    justify-items: flex-end;
+    margin: 0;
+  }
+}
+

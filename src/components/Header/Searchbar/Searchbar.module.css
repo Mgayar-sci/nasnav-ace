@@ -23,3 +23,11 @@
 .Searchbar button img {
   height: 19px;
 }
+
+@media screen and (max-width: 690px) {
+  .Searchbar{
+    width: 100%;
+    margin: 24px auto 0 auto;
+    order: 2;
+  }
+}

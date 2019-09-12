@@ -1,6 +1,7 @@
 .ProductsList{
   width: 100%;
 }
+
 .ProductsList header{
   display: flex;
   flex-direction: row;
@@ -25,4 +26,24 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media screen and (max-width: 1150px){
+  .ProductsList header{
+    margin: 40px 10px;
+  }
+}
+
+@media screen and (max-width: 1150px){
+  .ProductsList .productsBox {
+    justify-content: space-around;
+  }
+}
+
+@media screen and (max-width: 470px){
+  .ProductsList header h1{
+    font-size: 12pt;
+  }
 }

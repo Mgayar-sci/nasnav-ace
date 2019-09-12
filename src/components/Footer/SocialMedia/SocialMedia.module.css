@@ -1,10 +1,17 @@
 .SocialMedia{
   margin-right: 30px;
+  height: 100%;
+}
+.SocialMedia nav{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .SocialMedia nav a {
   display: inline-block;
   padding-right: 10px;
+  padding-bottom: 10px;
   margin: 0;
 }
 
@@ -14,4 +21,16 @@
 
 .SocialMedia nav a img{
   width: 34px;
+  margin: 0;
+}
+
+@media screen and (max-width: 840px) {
+  .SocialMedia {
+    margin-right: 10px;
+  }
+}
+@media screen and (max-width: 690px) {
+  .SocialMedia {
+    min-width: 300px;
+  }
 }

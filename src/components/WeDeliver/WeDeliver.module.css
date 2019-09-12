@@ -35,3 +35,39 @@
 .WeDeliver button:last-child {
   margin-right: 0px;
 }
+
+@media screen and (max-width: 690px) {
+  .WeDeliver h1 {
+    font-size: 24pt;
+  }
+
+  .WeDeliver h1 img {
+    width: 40px;
+  }
+
+  .WeDeliver h3 {
+    font-size: 16pt;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .WeDeliver h1 {
+    font-size: 18pt;
+  }
+    
+  .WeDeliver h1 img {
+    width: 30px;
+  }
+
+  .WeDeliver h3 {
+    font-size: 12pt;
+  }
+
+  .WeDeliver button {
+    margin-right: 10px;
+    width: 144px;
+    height: 36px;
+    font-size: 12pt;
+
+  }
+}

@@ -1,8 +1,30 @@
 .SecondaryNav {
-
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .SecondaryNav a {
   color: inherit;
   margin: 0 0 0 18px;
+}
+
+@media screen and (max-width: 1150px) {
+  .SecondaryNav {
+    margin-right: 10px;
+  }
+}
+
+@media screen and (max-width: 690px) {
+  .SecondaryNav {
+    align-self: center;
+    justify-items: center;
+    margin: auto;
+  }
+
+
+  .SecondaryNav a {
+    margin: 0 9px;
+  }
 }

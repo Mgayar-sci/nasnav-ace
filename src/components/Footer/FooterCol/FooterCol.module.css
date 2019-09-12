@@ -19,3 +19,9 @@
   color: inherit;
   font-size: 9pt;
 }
+
+@media screen and (max-width: 1150px) {
+  .FooterCol {
+    padding: 22px 10px 32px;
+  }
+}

@@ -10,7 +10,7 @@ import * as styles from './Slideshow.module.css';
 
 export default props => (
   <div className={styles.Slideshow}>
-    <Layout height="33px" padding={"1px 5px"} right={true}>
+    <Layout padding={"6px 5px"} right={true}>
       <nav className={styles.navigation}>
         {props.links.map((link, ndx) => <a href={link.url} key={ndx}>{link.label}</a>)}
       </nav>

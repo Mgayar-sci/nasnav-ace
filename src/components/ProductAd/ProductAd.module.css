@@ -1,14 +1,61 @@
 .ProductAd {
   margin: 40px 0;
   width: 100%;
+  overflow: auto;
 }
 
-.ProductAd .ad {
-  background-image: url('../../assets/img/ego.jpg');
+.ProductAd .leftAd, .ProductAd .rightAd {
+  width: 50%;
+  float: left;
   height: 290px;
   background-repeat:no-repeat;
-  background-position: center top;
-  background-size:1470px 290px;
+  background-size: 735px 290px;
+}
+
+.ProductAd .leftAd {
+  background-image: url('../../assets/img/ego-left.jpg');
+  background-position: right top;
+}
+
+.ProductAd .rightAd {
+  background-image: url('../../assets/img/ego-right.jpg');
+  background-position: left top;
+}
+
+@media screen and (max-width: 1150px) {
+  .ProductAd .leftAd, .ProductAd .rightAd {
+    background-size: 575px 227px;
+    height: 227px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .ProductAd .leftAd, .ProductAd .rightAd {
+    background-size: 450px 178px;
+    height: 178px;
+  }
+}
+
+@media screen and (max-width: 705px) {
+  .ProductAd .leftAd, .ProductAd .rightAd {
+    width: 100%;
+    background-position: center top;
+    background-size: 705px 278px;
+    height: 278px;
+  }
+}
 
 
+@media screen and (max-width: 540px) {
+  .ProductAd .leftAd, .ProductAd .rightAd {
+    background-size: 540px 213px;
+    height: 213px;
+  }
+}
+
+@media screen and (max-width: 415px) {
+  .ProductAd .leftAd, .ProductAd .rightAd {
+    background-size: 415px 164px;
+    height: 164px;
+  }
 }

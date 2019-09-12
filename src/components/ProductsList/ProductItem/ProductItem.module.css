@@ -4,7 +4,7 @@
   width: 100%;
   height: 278px;
   background-color: var(--bg-color-5);
-  margin: 0 15px 15px 0;
+  margin-top: 15px;
 }
 
 .saleItem {
@@ -66,4 +66,28 @@
 }
 .ProductItem .rating img:last-child{
   margin-right: 0px;
+}
+
+@media screen and (max-width: 1110px){
+  .ProductItem {
+    max-width: 470px;
+  }
+}
+
+@media screen and (max-width: 950px){
+  .ProductItem {
+    max-width: 370px;
+  }
+}
+
+@media screen and (max-width: 750px){
+  .ProductItem {
+    max-width: 270px;
+  }
+}
+
+@media screen and (max-width: 540px){
+  .ProductItem {
+    max-width: 100%;
+  }
 }

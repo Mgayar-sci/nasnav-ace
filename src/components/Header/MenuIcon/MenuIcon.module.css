@@ -1,0 +1,10 @@
+.MenuIcon{
+  display: none;
+  align-self: flex-start;
+  margin: 0;
+}
+@media screen and (max-width: 550px) {
+  .MenuIcon{
+    display: block;
+  }
+}

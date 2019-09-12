@@ -1,0 +1,13 @@
+.BackgroundBox{
+  width: 100%;
+  color: var(--text-color-4);
+  background-repeat: no-repeat;
+  background-position: center top;
+}
+
+@media screen and (max-width: 690px) {
+  .BackgroundBox {
+    margin-left: auto !important;
+    margin-right: auto !important;
+  }
+}

@@ -11,3 +11,17 @@
   color: inherit;
   text-decoration: underline;
 }
+
+@media screen and (max-width: 1150px) {
+  .Slogin {
+    margin-left: 10px;
+  }
+}
+
+@media screen and (max-width: 690px) {
+  .Slogin {
+    align-self: center;
+    justify-items: center;
+    margin: auto;
+  }
+}

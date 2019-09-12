@@ -5,6 +5,7 @@
   width: 100%;
   padding: 0;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 .spaceBetween {
@@ -14,4 +15,10 @@
 
 .right {
   justify-content: flex-end;
+}
+
+@media screen and (max-width: 690px) {
+  .Layout {
+    flex-flow: row wrap;
+  }
 }

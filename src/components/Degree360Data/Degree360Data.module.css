@@ -3,7 +3,7 @@
   margin-top: 32px;
 }
 
-.Degree360DataH1 {
+.degree360DataH1 {
   font-size: 31pt;
   font-weight: bold;
   text-transform: uppercase;
@@ -11,8 +11,18 @@
 
 }
 
-.Degree360DataH3 {
+.degree360DataH3 {
   font-size: 20pt;
   font-weight: 600;
   text-transform: uppercase;
+}
+
+@media screen and (max-width: 520px) {
+  .degree360DataH1 {
+    font-size: 20pt;
+  }
+  .degree360DataH3 {
+    font-size: 16pt;
+  }
+
 }

@@ -1,0 +1,43 @@
+.HorizontalLayout {
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+  width: 100%;
+}
+
+.left {
+  justify-content: flex-start;
+}
+.center {
+  justify-content: center;
+}
+.right {
+  justify-content: flex-end;
+}
+
+.spaceBetween {
+  justify-content: space-between;
+}
+
+.spaceAround {
+  justify-content: space-around;
+}
+
+.top {
+  align-items: flex-start;
+}
+
+.middle {
+  align-items: center;
+}
+
+.bottom {
+  align-items: flex-end;
+}
+
+
+@media screen and (max-width: 690px) {
+  .HorizontalLayout {
+    flex-flow: row wrap;
+  }
+}

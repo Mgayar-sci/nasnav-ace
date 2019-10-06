@@ -1,22 +1,12 @@
 import React from 'react';
 
-import slideImage1 from '../../assets/img/slideImage1.jpg';
-
-
-import Layout from '../Layout/Layout';
+import slideImage3 from '../../assets/img/slideImage3.jpg';
+// import slideImage2 from '../../assets/img/slideImage2.jpg';
+// import slideImage1 from '../../assets/img/slideImage1.jpg';
 import Slide from './Slide/Slide';
 
-import * as styles from './Slideshow.module.css';
-
 export default props => (
-  <div className={styles.Slideshow}>
-    <Layout padding={"6px 5px"} right={true}>
-      <nav className={styles.navigation}>
-        {props.links.map((link, ndx) => <a href={link.url} key={ndx}>{link.label}</a>)}
-      </nav>
-    </Layout>
-    <div className={styles.slides}>
-      <Slide title="30% Online Deal!" subtitle="on selected items" image={slideImage1}/>
-    </div>
+  <div>
+    <Slide title="30% Online Deal!" subtitle="on selected items" image={slideImage3}/>
   </div>
 )

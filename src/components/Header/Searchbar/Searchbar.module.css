@@ -1,18 +1,27 @@
 .Searchbar{
   display: flex;
   flex-grow: 1;
+  justify-content: flex-end;
   margin: 24px 34px 0 44px;
-  border: 1px solid var(--border-color-1);
 }
 
 .Searchbar input {
-  width: 100%;
+  width: 300px;
   background-color: white;
-  background-color: transparent;
-  border: 0;
+  border: 1px solid var(--border-color-1);
   font-size: 9.5pt;
-  padding: 10px 15px;
-  color: var(--text-color-2)
+  padding: 10px 39px 10px 15px;
+  color: var(--text-color-2);
+  background-image: url(../../../assets/img/search.png);
+  background-size: 19px 19px;
+  background-position: right 10px top 10px;
+  background-repeat: no-repeat;
+  transition-duration: 0.2s;
+  transition-timing-function: linear;
+}
+
+.Searchbar input:focus {
+  width: 100%;
 }
 
 .Searchbar button{
@@ -24,10 +33,20 @@
   height: 19px;
 }
 
+@media screen and (max-width: 715px) {
+  .Searchbar{
+    width: 250px;
+  }
+}
+
 @media screen and (max-width: 690px) {
   .Searchbar{
     width: 100%;
     margin: 24px auto 0 auto;
     order: 2;
+  }
+
+  .Searchbar input {
+    width: 100%;
   }
 }

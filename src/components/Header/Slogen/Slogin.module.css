@@ -1,6 +1,7 @@
 .Slogin {
   font-size: inherit;
-  color: inherit !important;
+  color: var(--primary-color);
+  font-size: 8pt;
 }
 
 .Slogin span {

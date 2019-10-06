@@ -14,6 +14,7 @@
   --bg-color-6: #c3001e;
   --bg-color-7: #424242;
   --bg-color-8: #e32436;
+  --bg-color-9: #dedede;
   --text-color-1: #393939;
   --text-color-2: #757575;
   --text-color-3: #333333;
@@ -24,12 +25,18 @@
   --border-color-1: #CCCCCC;
   --border-color-2: #646464;
   --border-color-3: #c3c3c3;
+  --primary-color: #cb0226;
+  --secondary-color: #231f1f;
 }
 body {
   margin: 0;
   font-family: "Open Sans", "OpenSans", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /* background-image: url('./assets/img/Ace1.png'); */
+  background-size: 1470px 2800px;
+  background-position: center top;
+  background-repeat: no-repeat;
 }
 
 code {

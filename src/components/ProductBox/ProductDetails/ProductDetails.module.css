@@ -1,0 +1,118 @@
+.ProductDetails {
+  width: 465px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-grow: 1;
+}
+
+.ProductDetails .productName {
+  font-weight: bold;
+  margin-bottom: 0;
+  text-align: left;
+}
+
+.ProductDetails p {
+  font-size: 8pt;
+  margin-bottom: 0;
+  text-align: left;
+}
+
+.ProductDetails .reviewLinks {
+  font-size: 8pt;
+  margin: 10px 0;
+}
+
+.ProductDetails .reviewLinks a {
+  color: inherit;
+}
+
+.ProductDetails .reviewLinks span {
+  margin: 0 15px;
+}
+
+.ProductDetails .oldPrice {
+  font-weight: bold;
+  text-decoration: line-through;
+  margin: 15px 0 0;
+}
+
+.ProductDetails .price {
+  font-weight: bold;
+  margin: 0 0 15px;
+}
+
+.ProductDetails .price span {
+  font-size: 12pt;
+}
+.buttonsContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px 0;
+}
+
+.ProductDetails .buttons{
+  width: 200px;
+  box-sizing: border-box;
+  background-color: var(--bg-color-2);
+  border: 2px solid var(--border-color-3);
+  font-size: 12pt;
+  font-weight: bold;
+  padding: 2px 0;
+}
+.ProductDetails .buttons:first-child{
+  background-color: var(--primary-color);
+  color: var(--text-color-4);
+  border: 0;
+}
+
+hr {
+  width: 100%;
+  border-bottom: 2px solid var(--border-color-1);
+  margin: 25px 0;
+}
+
+.ProductDetails .deliveryTitle {
+  color: var(--primary-color);
+  font-size: 13pt;
+  font-weight: bold;
+  align-self: flex-start;
+}
+.ProductDetails .deliveryText {
+  align-self: flex-start;
+}
+
+
+.ProductDetails .deliveryTitle img{
+  width: 15px;
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 950px) {
+  .ProductDetails .buttons{
+    width: 160px;
+  }
+}
+@media screen and (max-width: 750px) {
+  .ProductDetails{
+    align-items: center;
+  }
+  .ProductDetails .productName {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .ProductDetails .buttons{
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .ProductDetails .buttons{
+      font-size: 10pt;
+    width: 140px;
+  }
+}

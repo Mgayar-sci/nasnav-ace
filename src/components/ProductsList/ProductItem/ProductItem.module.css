@@ -60,14 +60,6 @@
   margin: 10px 0 0;
 }
 
-.ProductItem .rating img{
-  width: 12px;
-  margin-right: 2px;
-}
-.ProductItem .rating img:last-child{
-  margin-right: 0px;
-}
-
 @media screen and (max-width: 1110px){
   .ProductItem {
     max-width: 470px;

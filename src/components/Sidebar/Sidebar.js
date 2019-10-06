@@ -4,8 +4,8 @@ import { faTimes } from '@fortawesome/free-solid-svg-icons';
 import * as styles from './Sidebar.module.css';
 import Backdrop from '../Backdrop/Backdrop';
 export default props => (
-  <React.Fragment>
-    <div className={[styles.Sidebar, (!props.show && styles.hide), (props.open && styles.open)].join(" ")}>
+  <div className={[styles.Sidebar, (!props.show && styles.hide), (props.open && styles.open)].join(" ")}>
+    <div className={styles.contents}>
       <header>
         <h3>Menu</h3>
         <button onClick={props.clickHandler}>
@@ -14,6 +14,6 @@ export default props => (
       </header>
       {props.children}
     </div>
-    <Backdrop show={props.show} open={props.open} clickHandler={props.clickHandler} /> 
-  </React.Fragment>
+    <Backdrop show={props.show} open={props.open} clickHandler={props.clickHandler} />
+  </div>
 )

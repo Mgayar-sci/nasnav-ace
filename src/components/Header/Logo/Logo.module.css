@@ -1,10 +1,25 @@
 .Logo{
-  display: block;
-  width: 129px;
-  align-self: flex-start;
+  display: flex;
+  height: 90px;
+  text-align: center;
 }
+
+.Logo img{
+  display: block;
+  height: 100%;
+}
+
 @media screen and (max-width: 1150px) {
   .Logo {
     margin-left: 10px;
+  }
+}
+@media screen and (max-width: 690px) {
+  .Logo{
+    display: flex;
+    width: 100%;
+    align-self: center;
+    justify-self: center;
+    justify-content: center;
   }
 }

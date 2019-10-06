@@ -1,0 +1,12 @@
+.Thumb{
+  width: 72px;
+  margin: 10px 0;
+  border: 2px solid var(--border-color-1);
+  border-radius: 5px;
+}
+.Thumb:first-child {
+  margin: 0 0 10px;
+}
+.Thumb img {
+  width: 100%;
+}

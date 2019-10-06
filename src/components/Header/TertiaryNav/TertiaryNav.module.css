@@ -1,0 +1,19 @@
+.TertiaryNav {
+  color: var(--text-color-1);
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  padding-top: 10px;
+}
+
+.TertiaryNav a {
+  color: inherit;
+  font-size: 10pt;
+  font-weight: bold;
+  margin: 0 20px;
+}
+.TertiaryNav a:last-child {
+  margin-right: 10px;
+}

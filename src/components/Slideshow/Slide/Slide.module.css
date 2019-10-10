@@ -30,6 +30,7 @@
   text-transform: uppercase;
   margin: 0 0 0;
   text-shadow: 2px 4px 0 var(--text-color-5);
+  color: inherit;
 }
 
 .Slide .slideData h3 {
@@ -37,6 +38,7 @@
   font-weight: bolder;
   text-transform: lowercase;
   margin: 0;
+  color: inherit;
 }
 
 

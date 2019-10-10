@@ -1,0 +1,14 @@
+.SingleCategory .header {
+  font-size: 30pt;
+  text-align: left;
+}
+
+.SingleCategory .itemsCount {
+  margin: 20px 10px;
+}
+
+@media screen and (max-width: 1150px){
+  .SingleCategory .header {
+    margin: 0 10px;
+  }
+}

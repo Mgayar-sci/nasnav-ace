@@ -3,6 +3,7 @@
   color: var(--text-color-4);
   background-repeat: no-repeat;
   background-position: center top;
+  text-align: center;
 }
 
 @media screen and (max-width: 690px) {

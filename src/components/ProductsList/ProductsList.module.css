@@ -34,9 +34,7 @@
   .ProductsList header{
     margin: 40px 10px;
   }
-}
-
-@media screen and (max-width: 1150px){
+  
   .ProductsList .productsBox {
     justify-content: space-around;
   }

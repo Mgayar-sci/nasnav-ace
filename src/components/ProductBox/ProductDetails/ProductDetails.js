@@ -1,7 +1,6 @@
 import React from 'react';
 import StarRating from '../../StarRating/StarRating';
 import Counter from './Counter/Counter';
-import HorizontalLayout from '../../HorizontalLayout/HorizontalLayout';
 
 import * as styles from './ProductDetails.module.css';
 

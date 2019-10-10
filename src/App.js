@@ -4,6 +4,9 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.css';
 
 import Home from './pages/Home/Home';
+import SingleCategory from './pages/SingleCategory/SingleCategory';
+import SingleBrand from './pages/SingleBrand/SingleBrand';
+
 import Product from './pages/Product/Product';
 
 import Header from './components/Header/Header';
@@ -51,7 +54,10 @@ class App extends React.Component {
               {/* render={(props) => <Dashboard {...props} isAuthed={true} />} */}
             </Route>
             <Route path="/products">
-              {/* <Home /> */}
+              <SingleCategory />
+            </Route>
+            <Route path="/brands">
+              <SingleBrand />
             </Route>
             <Route path="/">
               <Home slideShowNav={this.state.slideShowNav} productsData={this.state.productsData} />

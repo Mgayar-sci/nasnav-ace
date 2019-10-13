@@ -16,11 +16,8 @@ import WeDeliver from '../../components/WeDeliver/WeDeliver';
 import ProductAd from '../../components/ProductAd/ProductAd';
 
 import ProductsList from '../../components/ProductsList/ProductsList';
-import ProductItem from '../../components/ProductsList/ProductItem0/ProductItem0';
 
 export default props => {
-
-  let productItem = product => <ProductItem key={product.id}  productData={{ ...product }} />
   
   return (
     <div>
@@ -39,7 +36,7 @@ export default props => {
         </BackgroundBox>
       </HorizontalLayout>
       <HorizontalLayout vAlign="spaceAround">
-        <ProductsList productsData={props.productsData} header="Best Selling products & sales" headerLinkText="view all" productItem={productItem} />
+        <ProductsList productsData={props.productsData} header="Best Selling products & sales" headerLinkText="view all" styleId={0} />
       </HorizontalLayout>
       <HorizontalLayout vAlign="spaceAround">
         <WeDeliver />

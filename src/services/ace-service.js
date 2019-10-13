@@ -2,20 +2,7 @@ const aceData = {
   products: {
     "total": 80,
     "products": [
-      {
-        "id": 793,
-        "name": "LIGHT LED INTERIOR BAR RED 38.1CM CUSTOM",
-        "cover_image_url": "/img/products/product1/large-image1.jpg",
-        "price": 200,
-        "category_id": 246,
-        "brand_id": 121,
-        "barcode": "077341239031",
-        "currency": 1,
-        "stock_id": 794,
-        "multiple_variants": false,
-        "hidden": false,
-        "p_name": "light-led-interior-bar-red-38-1cm-custom"
-      },
+      
       {
         "id": 797,
         "name": "LED SOLAR STAKE LIGHT SQUARE 30CM X 2.5CM (11.8IN X 1IN)",

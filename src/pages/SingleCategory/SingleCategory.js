@@ -4,8 +4,6 @@ import HorizontalLayout from '../../components/HorizontalLayout/HorizontalLayout
 import ProductFilterColumn from '../../components/ProductFilterColumn/ProductFilterColumn';
 import ProductList from '../../components/ProductsList/ProductsList';
 
-import ProductItem from '../../components/ProductsList/ProductItem1/ProductItem1';
-
 import * as styles from './SingleCategory.module.css';
 
 export default class extends Component {
@@ -55,9 +53,7 @@ export default class extends Component {
         name: findInArray(brand_id, this.state.brands) ? findInArray(brand_id, this.state.brands).name : ""
       }]) : acc.map(brand => brand.id !== brand_id ? brand : { ...brand, count: brand.count + 1 })
     }, []);
-    
-    let productItem = product => <ProductItem key={product.id} productData={{ ...product }} />
-    
+        
     return (
       <div className={styles.SingleCategory}>
         <HorizontalLayout vAlign="left" padding="40px 0">
@@ -66,7 +62,7 @@ export default class extends Component {
         </HorizontalLayout>
         <HorizontalLayout hAlign="spaceBetween" padding="25px 0">
           <ProductFilterColumn filters={visible_brands} headerText="brand name" clickHandler={this.applyFilter}/>
-          <ProductList productsData={products} productItem={productItem} />
+          <ProductList productsData={products} styleId={1}/>
         </HorizontalLayout>
       </div>
     )

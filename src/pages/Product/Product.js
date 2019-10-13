@@ -6,7 +6,6 @@ import HorizontalLayout from '../../components/HorizontalLayout/HorizontalLayout
 import ProductBox from '../../components/ProductBox/ProductBox';
 
 import ProductsList from '../../components/ProductsList/ProductsList';
-import ProductItem from '../../components/ProductsList/ProductItem0/ProductItem0';
 
 import ProductAd from '../../components/ProductAd/ProductAd';
 import ProductOverview from '../../components/ProductOverview/ProductOverview';
@@ -38,8 +37,6 @@ export default class  extends Component {
   }
 
   render() {
-
-    let productItem = product => <ProductItem key={product.id} productData={{ ...product }} />
     
     return (
       <div>
@@ -50,7 +47,7 @@ export default class  extends Component {
           <ProductOverview productDescription={this.state.productData.description || []} />
         </HorizontalLayout>
         <HorizontalLayout vAlign="spaceAround">
-          <ProductsList productsData={this.props.productsData} header="You may also like" productItem={productItem} />
+          <ProductsList productsData={this.props.productsData} header="You may also like" styleId={0} />
         </HorizontalLayout>
         <ProductAd />
       </div>

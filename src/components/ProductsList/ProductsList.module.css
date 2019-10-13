@@ -28,7 +28,27 @@
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
+  align-items: stretch;
 }
+
+.productsBox::after {
+  content: "";
+  width: calc((100% - 80px)/3);
+}
+
+.style0::after {
+  min-width: 370px;
+}
+
+.style1::after {
+  min-width: 270px;
+}
+
+.style2::after {
+  min-width: 270px;
+}
+
+
 
 @media screen and (max-width: 1150px){
   .ProductsList header{
@@ -37,6 +57,15 @@
   
   .ProductsList .productsBox {
     justify-content: space-around;
+  }
+}
+
+@media screen and (max-width: 750px){
+  .style1::after{
+    min-width: 250px;
+  }
+  .style2::after{
+    min-width: 240px;
   }
 }
 

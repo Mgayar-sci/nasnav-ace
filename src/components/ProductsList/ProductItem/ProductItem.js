@@ -1,6 +1,6 @@
 import React from 'react';
 
-import * as styles from './ProductItem1.module.css';
+import * as styles from './ProductItem.module.css';
 
 import saleItem from '../../../assets/img/sale.png';
 import newItem from '../../../assets/img/new.png';
@@ -22,7 +22,7 @@ export default props => {
   productData = { ...productData, ...props.productData}
   
   return (
-    <div className={styles.ProductItem1}>
+    <div className={[styles.ProductItem, styles[`style${props.styleId || 0}`]].join(" ")}>
       <Link to={`/products/${productData.id}`}>
         {productData.saleItem && <img src={saleItem} alt="" className={styles.saleItem} />}
         {productData.newItem && <img src={newItem} alt="" className={styles.newItem} />}

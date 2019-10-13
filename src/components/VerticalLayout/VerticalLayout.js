@@ -4,6 +4,8 @@ import * as styles from './VerticalLayout.module.css';
 
 export default props => {
   let defaultProps = {
+    width: 'auto',
+    minWidth: '0',
     height: 'auto',
     padding: '0',
     margin: '0 auto',
@@ -13,6 +15,8 @@ export default props => {
   };
 
   let inlineStyle = {
+    width: props.width || defaultProps.width,
+    minWidth: props.minWidth || defaultProps.minWidth,
     height: props.height || defaultProps.height,
     padding: props.padding || defaultProps.padding,
     margin: props.margin || defaultProps.margin,

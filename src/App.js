@@ -6,8 +6,8 @@ import './App.css';
 import Home from './pages/Home/Home';
 import SingleCategory from './pages/SingleCategory/SingleCategory';
 import SingleBrand from './pages/SingleBrand/SingleBrand';
-
 import Product from './pages/Product/Product';
+import Result from './pages/Result/Result';
 
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
@@ -50,6 +50,9 @@ class App extends React.Component {
           >
           </Header>
           <Switch>
+            <Route path="/result">
+              <Result />
+            </Route>
             <Route path="/products/:productId" render={(props) => <Product {...props} productsData={this.state.productsData} />}>
               {/* render={(props) => <Dashboard {...props} isAuthed={true} />} */}
             </Route>
